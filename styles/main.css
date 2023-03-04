@@ -1,0 +1,161 @@
+/*---------
+Auther: Taylor Kennedy
+Nickname: Dev_devel
+
+--------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+/* Main results styles */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 425px;
+  border-radius: 25px;
+  padding: 10vmin 11.8vmin;
+  box-shadow: -5px 25px 39px 5px rgba(0, 0, 255, 0.081);
+}
+
+/* Left card styles */
+.card_left {
+  background-color: rgba(68, 0, 255, 0.993);
+  border: 1px solid blue;
+  z-index: 1;
+  color: rgb(204, 204, 204);
+  justify-content: space-around;
+  font-size: 0.79em;
+  text-align: center;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(56, 10, 180, 1), rgba(43, 6, 145, 0));
+  padding: 20px;
+  border-radius: 75px;
+  width: 120px;
+  height: 120px;
+}
+
+.round span {
+  color: #fff;
+  font-size:3.6em;
+  font-weight: 700;
+}
+
+/* Right Card styles*/
+.card_right {
+  background-color: #fff;
+  border: none;
+  margin-left: -25px;
+  width: 350px;
+}
+
+.card_right h2 {
+  align-self: flex-start;
+  margin-bottom: 30px;
+  font-size: 1.3em;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+.score-1 {
+  background-color: rgba(247, 27, 146, 0.027);
+}
+
+.score-2 {
+  background-color: rgba(245, 231, 155, 0.11)
+}
+
+.score-3 {
+  background-color: rgba(127, 245, 190, 0.1);
+}
+
+.score-4 {
+  background-color: rgba(68, 0, 225, 0.082);
+}
+
+span {
+  color: rgb(175, 171, 171);
+}
+
+.cont_btn {
+  background-color:rgba(35, 40, 68, 0.993);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 35px;
+  color: #fff;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.cont_btn:hover {
+  background-color:rgba(68, 0, 255, 0.993);
+  cursor: pointer;
+}
+
+img {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 320px;
+    padding: 10vmin 11.8vmin;
+  }
+
+  .card_left {
+    box-shadow: none;
+    z-index: 1;
+  }
+
+  .card_right {
+    margin-top: -17px;
+    margin-left: 0;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.09);
+  }
+}
